@@ -1,0 +1,72 @@
+style
+
+<style>
+  /* Fallback: kalau layar sempit tapi media query di-block, user masih bisa scroll */
+  .table-wrap { width: 100%; overflow-x: auto; }
+  .table-stack { border-collapse: collapse; width: 100%; }
+  .table-stack th, .table-stack td { border: 1px solid #e5e7eb; padding: 12px; font-size: 14px; line-height: 1.4; }
+  .table-stack thead th { background: #f5f7fa; text-align: left; }
+
+  /* MODE MOBILE */
+  @media screen and (max-width:600px) {
+    .table-stack thead { display: none !important; }
+    .table-stack, 
+    .table-stack tbody, 
+    .table-stack tr, 
+    .table-stack td, 
+    .table-stack th { display: block !important; width: 100% !important; }
+    .table-stack tr { margin-bottom: 12px !important; border: 1px solid #e5e7eb; }
+    .table-stack td { 
+      border: 0 !important; 
+      border-bottom: 1px solid #eef2f7 !important; 
+      padding: 10px 12px !important; 
+    }
+    .table-stack td:last-child { border-bottom: 0 !important; }
+    /* Label kolom muncul di atas nilai */
+    .table-stack td .label {
+      display: block !important;
+      font-weight: 600 !important;
+      color: #6b7280 !important; /* abu-abu */
+      margin-bottom: 4px !important;
+    }
+  }
+</style>
+
+
+
+table
+
+<div class="table-wrap" style="width:100%;overflow-x:auto;">
+  <table class="table-stack" role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">
+    <thead>
+      <tr>
+        <th>Nama Customer</th>
+        <th>No. Kontrak</th>
+        <th>Tanggal</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Contoh 1 row; ulangi pola ini untuk setiap baris -->
+      <tr>
+        <td>
+          <span class="label" style="display:none;">Nama Customer</span>
+          Budi Santoso
+        </td>
+        <td>
+          <span class="label" style="display:none;">No. Kontrak</span>
+          1234567890
+        </td>
+        <td>
+          <span class="label" style="display:none;">Tanggal</span>
+          16 Okt 2025
+        </td>
+        <td>
+          <span class="label" style="display:none;">Status</span>
+          Sukses
+        </td>
+      </tr>
+      <!-- ...baris lain -->
+    </tbody>
+  </table>
+</div>
