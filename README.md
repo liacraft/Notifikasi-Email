@@ -1,1 +1,1 @@
-repo wording email notifikasi
+repo template email notifikasi mtf mobile
