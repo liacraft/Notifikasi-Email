@@ -795,7 +795,7 @@
                  <img
                   align="right"
                   alt=""
-                  src="https://mcusercontent.com/6abe246b2ca08630f1f789a9d/images/a87ad9bd-ea90-1cf2-67f6-1feca5e99a67.png"
+                  src="header-img.png"
                   width="600"
                   style="
                    max-width: 681px;
@@ -897,7 +897,7 @@
                  class="mcnTextContent"
                  style="padding-top: 20px; padding-right: 18px; padding-left: 18px"
                 >
-                 <span style="font-size: 14px">Yth. Bapak/Ibu [Nama Customer MTF],</span><br />
+                 <span style="font-size: 16px">Yth. Bapak/Ibu [Nama Customer MTF],</span><br />
                  &nbsp;
                 </td>
                </tr>
@@ -1037,7 +1037,7 @@
 
              <table
               class="table-kv"
-              role="presentation"
+              role="scan-qr"
               cellpadding="0"
               cellspacing="0"
               style="width: 100%; border-collapse: collapse"
@@ -1173,41 +1173,6 @@
            </tr>
           </tbody>
          </table>
-         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
-          <tbody class="mcnTextBlockOuter">
-           <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
-             <table
-              align="left"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              style="max-width: 100%; min-width: 100%"
-              width="100%"
-              class="mcnTextContentContainer"
-             >
-              <tbody>
-               <tr>
-                <td
-                 valign="top"
-                 class="mcnTextContent"
-                 style="
-                  padding: 0px 18px 9px;
-                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: normal;
-                  text-align: justify;
-                 "
-                >
-                 Bukti penerimaan pembayaran akan dikirimkan ke alamat email yang terdaftar pada sistem kami.</td>
-               </tr>
-              </tbody>
-             </table>
-            </td>
-           </tr>
-          </tbody>
-         </table>
 
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
@@ -1244,14 +1209,70 @@
            </tr>
           </tbody>
          </table>
-         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
-          <tbody class="mcnTextBlockOuter">
-           <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
-            </td>
-           </tr>
-          </tbody>
-         </table>
+
+         <!-- START QR & DOWNLOAD -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" ">
+    <tr>
+        <td>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                     <!-- Content -->
+                    <td valign="top" style="padding: 20px; width:20%">
+
+                        <div style="
+                            font-size:16px;
+                            font-weight:bold;
+                            color:#555;
+                            font-family:Helvetica,Arial,sans-serif;
+                            margin-bottom:5px;">
+                           Download Bukti Bayar
+                        </div>
+
+                        <div style="
+                            font-size:14px;
+                            color:#555;
+                            line-height:22px;
+                            font-family:Helvetica,Arial,sans-serif;
+                            margin-bottom:18px;">
+                            Klik button "Download Bukti Bayar" untuk mengunduh bukti pembayaran Anda.
+                        </div>
+
+                        <a href="{{download_url}}"
+                           style="
+                            display:inline-block;
+                            background:#fff;
+                            color:#555;
+                            border: 1px solid #555;
+                            text-decoration:none;
+                            padding:12px 22px;
+                            font-size:12px;
+                            font-weight:600;
+                            font-family:Helvetica,Arial,sans-serif;">
+                            Download Bukti Bayar
+                        </a>
+
+                    </td>
+
+                    <!-- QR -->
+                    <td width="140" valign="top" style="padding: 20px; text-align:center;">
+                        <img src="dummy_qr.png"
+                           width="120"
+                           style="display:block;border:0;"
+                        >
+                        <span style="font-size: 10px; color:#555; display: block;">Verifikasi bukti bayar dengan scan QR code di atas ini</span>
+                    </td>
+
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+<!-- END QR & DOWNLOAD -->
+
+
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1291,6 +1312,7 @@
            </tr>
           </tbody>
          </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
