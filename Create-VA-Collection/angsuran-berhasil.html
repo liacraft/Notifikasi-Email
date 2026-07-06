@@ -736,6 +736,25 @@
      line-height: 150% !important;
     }
    }
+   @media only screen and (max-width: 480px) {
+    .responsive-qr-col {
+     width: 100% !important;
+     max-width: 100% !important;
+     float: none !important;
+    }
+    .align-center-mobile, 
+    .align-center-mobile div, 
+    .align-center-mobile td, 
+    .align-center-mobile span {
+     text-align: center !important;
+    }
+    .align-center-mobile a {
+     margin: 0 auto !important;
+    }
+    .qr-margin-top {
+     margin-top: 30px !important;
+    }
+   }
   </style>
  </head>
  <body>
@@ -795,7 +814,7 @@
                  <img
                   align="right"
                   alt=""
-                  src="header-img.png"
+                  src="header-img-opt.png"
                   width="600"
                   style="
                    max-width: 681px;
@@ -1210,66 +1229,50 @@
           </tbody>
          </table>
 
-         <!-- START QR & DOWNLOAD -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" ">
-    <tr>
-        <td>
+        <!-- START QR & DOWNLOAD -->
+        <table role="new-section" width="100%" cellpadding="0" cellspacing="0" border="0">
+         <tr>
+         <!-- Padding disamakan dengan tabel lain (kiri-kanan 18px) -->
+         <td style="padding: 20px 18px;">
+         
+         <!-- Kolom Kiri: Teks & Tombol Download (Rata Kiri di Desktop, Center di Mobile) -->
+         <table role="new-section" align="left" cellpadding="0" cellspacing="0" border="0" width="60%" class="responsive-qr-col">
+               <tr>
+               <td align="left" valign="top" class="align-center-mobile">
+               <div style="font-size:16px; font-weight:bold; color:#555; font-family:Helvetica,Arial,sans-serif; margin-bottom:5px;">
+               Download Bukti Bayar
+               </div>
+               <div style="font-size:14px; color:#555; line-height:22px; font-family:Helvetica,Arial,sans-serif; margin-bottom:18px;">
+               Klik button "Download Bukti Bayar" untuk mengunduh bukti pembayaran Anda.
+               </div>
+               <a href="{{download_url}}" style="display:inline-block; background:#fff; color:#555; border: 1px solid #555; text-decoration:none; padding:12px 22px; font-size:12px; font-weight:600; font-family:Helvetica,Arial,sans-serif;">
+               Download Bukti Bayar
+               </a>
+               </td>
+               </tr>
+         </table>
 
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                     <!-- Content -->
-                    <td valign="top" style="padding: 20px; width:20%">
+         <!-- Kolom Kanan: QR Code (Rata Kanan di Desktop, Center di Mobile) -->
+               <table role="new-section" align="right" cellpadding="0" cellspacing="0" border="0" width="140" class="responsive-qr-col qr-margin-top">
+               <tr>
+               <!-- Kuncinya ada di width="100%" di bawah ini -->
+               <td align="center" valign="top" class="align-center-mobile" style="text-align: center; width: 100%;">
+                  
+                  <img src="dummy_qr.png" width="120" style="display: inline-block; border: 0; margin: 0 auto;" alt="QR Code">
+                  
+                  <span style="font-size: 10px; color: #555; display: block; margin-top: 8px; line-height: 1.2; text-align: center; width: 100%;">
+                  Verifikasi bukti bayar dengan scan QR code di atas ini
+                  </span>
+                  
+               </td>
+               </tr>
+               </table>
+               
 
-                        <div style="
-                            font-size:16px;
-                            font-weight:bold;
-                            color:#555;
-                            font-family:Helvetica,Arial,sans-serif;
-                            margin-bottom:5px;">
-                           Download Bukti Bayar
-                        </div>
-
-                        <div style="
-                            font-size:14px;
-                            color:#555;
-                            line-height:22px;
-                            font-family:Helvetica,Arial,sans-serif;
-                            margin-bottom:18px;">
-                            Klik button "Download Bukti Bayar" untuk mengunduh bukti pembayaran Anda.
-                        </div>
-
-                        <a href="{{download_url}}"
-                           style="
-                            display:inline-block;
-                            background:#fff;
-                            color:#555;
-                            border: 1px solid #555;
-                            text-decoration:none;
-                            padding:12px 22px;
-                            font-size:12px;
-                            font-weight:600;
-                            font-family:Helvetica,Arial,sans-serif;">
-                            Download Bukti Bayar
-                        </a>
-
-                    </td>
-
-                    <!-- QR -->
-                    <td width="140" valign="top" style="padding: 20px; text-align:center;">
-                        <img src="dummy_qr.png"
-                           width="120"
-                           style="display:block;border:0;"
-                        >
-                        <span style="font-size: 10px; color:#555; display: block;">Verifikasi bukti bayar dengan scan QR code di atas ini</span>
-                    </td>
-
-                </tr>
-            </table>
-
-        </td>
-    </tr>
-</table>
-<!-- END QR & DOWNLOAD -->
+         </td>
+         </tr>
+        </table>
+         <!-- END QR & DOWNLOAD -->
 
 
 
