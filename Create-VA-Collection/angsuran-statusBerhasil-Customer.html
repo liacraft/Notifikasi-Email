@@ -17,7 +17,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Informasi Virtual Account Pembayaran</title>
+  <title>Informasi Status Pembayaran Virtual Account</title>
 
   <style type="text/css">
    p {
@@ -736,6 +736,25 @@
      line-height: 150% !important;
     }
    }
+   @media only screen and (max-width: 480px) {
+    .responsive-qr-col {
+     width: 100% !important;
+     max-width: 100% !important;
+     float: none !important;
+    }
+    .align-center-mobile, 
+    .align-center-mobile div, 
+    .align-center-mobile td, 
+    .align-center-mobile span {
+     text-align: center !important;
+    }
+    .align-center-mobile a {
+     margin: 0 auto !important;
+    }
+    .qr-margin-top {
+     margin-top: 30px !important;
+    }
+   }
   </style>
  </head>
  <body>
@@ -852,7 +871,7 @@
                   font-weight: bold;
                  "
                 >
-                 <h1 class="null">Notifikasi Pelunasan Dipercepat</h1>
+                 <h1 class="null">Konfirmasi Pembayaran Berhasil</h1>
                 </td>
                </tr>
               </tbody>
@@ -897,7 +916,7 @@
                  class="mcnTextContent"
                  style="padding-top: 20px; padding-right: 18px; padding-left: 18px"
                 >
-                 <span style="font-size: 14px">Halo Bapak/Ibu Operation Head,</span><br />
+                 <span style="font-size: 16px">Yth. Bapak/Ibu [Nama Customer MTF],</span><br />
                  &nbsp;
                 </td>
                </tr>
@@ -947,9 +966,10 @@
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
-                 Kami informasikan bahwa customer cabang Bapak/Ibu telah melakukan Pelunasan Dipercepat dengan detail transaksi sebagai berikut:
+                 Terima kasih telah menggunakan Virtual Account untuk kebutuhan transaksi pembayaran Anda. Berikut kami sampaikan informasi status pembayaran melalui Virtual Account:
                 </td>
                </tr>
               </tbody>
@@ -978,13 +998,13 @@
               .table-kv {
                width: 100%;
                border-collapse: collapse;
-               margin-bottom: 20px;
+               margin-bottom: 10px;
                table-layout: auto;
               }
               .table-kv td {
                font-size: 16px;
                line-height: 1.5;
-               padding: 8px 18px;
+               padding: 5px 18px;
                vertical-align: middle;
                font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
               }
@@ -1036,7 +1056,7 @@
 
              <table
               class="table-kv"
-              role="presentation"
+              role="scan-qr"
               cellpadding="0"
               cellspacing="0"
               style="width: 100%; border-collapse: collapse"
@@ -1048,9 +1068,55 @@
                 <td class="kv-value">John Doe</td>
                </tr>
                <tr>
+                <td class="kv-label">NIK</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">3312456712345678</td>
+               </tr>
+               <tr>
                 <td class="kv-label">Nomor Kontrak</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">99881939103</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Nomor Request</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">01230223</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Nomor Transaksi</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">999PYMT2026060360</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Jenis Transaksi</td>
+                <td class="kv-sep">:</td>
+                <!-- <td class="kv-value">Angsuran</td> -->
+                 <td class="kv-value">Pembayaran Pokok dan Bunga</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Tanggal Request</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">12 Juni 2026</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Tanggal Jatuh Tempo</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">15 Juni 2026</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Pembayaran Ke</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">22</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Nominal Pembayaran</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">Rp 6.479.167</td>
+               </tr>
+               <tr>
+                <td class="kv-label">PPN PK</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">0</td>
                </tr>
                <tr>
                 <td class="kv-label">Nomor Virtual Account</td>
@@ -1062,29 +1128,36 @@
                 <td class="kv-sep">:</td>
                 <td class="kv-value">Bank Mandiri</td>
                </tr>
-               <tr>
-                <td class="kv-label">Jenis Transaksi</td>
+                              <tr>
+                <td class="kv-label">Status Pembayaran</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">Pelunasan Dipercepat</td>
+                <td class="kv-value">
+                     <span style="
+                        display: inline-block;
+                        padding: 4px 10px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #0B5C22;
+                        background-color: #E1FCE9;
+                        border-radius: 999px;">
+                        Berhasil
+                     </span>
+               </td>
                </tr>
                <tr>
                 <td class="kv-label">Tanggal Pembayaran</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">25 April 2026</td>
-               </tr>
-               <tr>
-                <td class="kv-label">Nominal Pembayaran</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">Rp 135.785.000</td>
+                <td class="kv-value">12 Juni 2026</td>
                </tr>
               </tbody>
              </table>
 
-             <!-- END STYLING TABLE -->
+         <!-- END STYLING TABLE -->
             </td>
            </tr>
           </tbody>
          </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1104,15 +1177,13 @@
                  valign="top"
                  class="mcnTextContent"
                  style="
-                  padding: 0px 18px 9px;
+                  padding: 0px 18px;
                   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: normal;
+                  font-size: 12px;
+                  font-weight: bold;
                  "
                 >
-                 Mohon agar Bapak/Ibu dapat melakukan activity di sistem E-Star agar pelunasan dapat diproses.
-                Atas perhatiannya, kami ucapkan terima kasih.</td>
+                 Harga Sudah Termasuk PPN sesuai dengan ketentuan perpajakan yang berlaku
                </tr>
               </tbody>
              </table>
@@ -1120,6 +1191,43 @@
            </tr>
           </tbody>
          </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
+          <tbody class="mcnTextBlockOuter">
+           <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
+             <table
+              align="left"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="max-width: 100%; min-width: 100%"
+              width="100%"
+              class="mcnTextContentContainer"
+             >
+              <tbody>
+               <tr>
+                <td
+                 valign="top"
+                 class="mcnTextContent"
+                 style="
+                  padding: 0px 18px 10px;
+                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
+                  font-size: 12px;
+                  font-style: italic;
+                  font-weight: normal;
+                 "
+                >
+                 <strong>Pemenuhan PPN ini sesuai dengan UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan
+                 </strong>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1144,15 +1252,94 @@
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
-                 <h2 class="null">
+                 Apabila Bapak/Ibu mengalami kendala atau membutuhkan informasi lebih lanjut, silakan hubungi layanan Care Center 1500059 (Senin–Jumat pukul 08.00–17.00 WIB). Cek detail tagihan, simulasi pembayaran, dan informasi kontrak Anda melalui aplikasi MTF Mobile.</td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+
+        <!-- START QR & DOWNLOAD -->
+        <table role="new-section" width="100%" cellpadding="0" cellspacing="0" border="0">
+         <tr>
+         <!-- Padding disamakan dengan tabel lain (kiri-kanan 18px) -->
+         <td style="padding: 10px 18px;">
+         
+         <!-- Kolom Kiri: Teks & Tombol Download (Rata Kiri di Desktop, Center di Mobile) -->
+         <table role="new-section" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" class="responsive-qr-col">
+               <tr>
+               <td align="center" valign="top" class="align-center-mobile">
+               <!-- <div style="font-size:16px; font-weight:bold; font-family:Helvetica,Arial,sans-serif; margin-bottom:5px;">
+               Download Bukti Bayar
+               </div> -->
+               <div style="font-size:16px; margin-bottom:18px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;">
+               Klik tombol di bawah ini untuk mengunduh bukti pembayaran Anda.
+               </div>
+               <a href="{{download_url}}" style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif; display:inline-block; border-radius: 100px; color: #fff; background:#0865B6; border: 1px solid #0865B6; text-decoration:none; padding:12px 22px; font-size:14px; font-weight:500; font-family:Helvetica,Arial,sans-serif;">
+               Download Bukti Bayar
+               </a>
+               </td>
+               </tr>
+         </table>
+
+         <!-- Kolom Kanan: QR Code (Rata Kanan di Desktop, Center di Mobile) -->
+               <!-- <table role="new-section" align="right" cellpadding="0" cellspacing="0" border="0" width="140" class="responsive-qr-col qr-margin-top">
+               <tr>
+               <td align="center" valign="top" class="align-center-mobile" style="text-align: center; width: 100%;">
+                  
+                  <img src="dummy_qr.png" width="120" style="display: inline-block; border: 0; margin: 0 auto;" alt="QR Code">
+                  
+                  <span style="font-size: 10px; color: #555; display: block; margin-top: 8px; line-height: 1.2; text-align: center; width: 100%;">
+                  Verifikasi bukti bayar dengan scan QR code di atas ini
+                  </span>
+                  
+               </td>
+               </tr>
+               </table> -->
+               
+
+         </td>
+         </tr>
+        </table>
+         <!-- END QR & DOWNLOAD -->
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
+          <tbody class="mcnTextBlockOuter">
+           <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
+             <table
+              align="left"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="max-width: 100%; min-width: 100%"
+              width="100%"
+              class="mcnTextContentContainer"
+             >
+              <tbody>
+               <tr>
+                <td
+                 valign="top"
+                 class="mcnTextContent"
+                 style="
+                  padding: 10px 18px 0px;
+                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: normal;
+                 "
+                >
+                 
                   <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                    ><span style="font-size: 16px">Hormat Kami</span></font
                   >
-                 </h2>
-                 <span style="font-size: 16px">PT Mandiri Tunas Finance</span><br />
-                 &nbsp;
+                 
+                 
                 </td>
                </tr>
               </tbody>
@@ -1161,6 +1348,7 @@
            </tr>
           </tbody>
          </table>
+         
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1189,7 +1377,8 @@
                 >
                  <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                   ><span style="font-size: 16px"
-                   ><strong>PT Mandiri Tunas Finance</strong>
+                   >
+                   <strong>PT Mandiri Tunas Finance</strong>
                    <br />
                    NPWP 01.343.661.4-093.000<br />
                    Graha Mandiri Jl. Imam Bonjol No 61, Menteng, Jakarta Pusat, DKI Jakarta</span
@@ -1211,6 +1400,7 @@
            </tr>
           </tbody>
          </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%">
           <tbody class="mcnImageBlockOuter">
            <tr>
