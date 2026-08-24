@@ -5,19 +5,10 @@
  xmlns:o="urn:schemas-microsoft-com:office:office"
 >
  <head>
-  <!-- NAME: 1 COLUMN -->
-  <!--[if gte mso 15]>
-   <xml>
-    <o:OfficeDocumentSettings>
-     <o:AllowPNG />
-     <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-   </xml>
-  <![endif]-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Konfirmasi Pembayaran Berhasil</title>
+  <title>Pembayaran Angsuran Berhasil</title>
 
   <style type="text/css">
    p {
@@ -852,7 +843,7 @@
                   font-weight: bold;
                  "
                 >
-                 <h1 class="null">Konfirmasi Pembayaran Berhasil</h1>
+                 <h1 class="null">Notifikasi Pembayaran via MTF Mobile</h1>
                 </td>
                </tr>
               </tbody>
@@ -897,7 +888,7 @@
                  class="mcnTextContent"
                  style="padding-top: 20px; padding-right: 18px; padding-left: 18px"
                 >
-                 <span style="font-size: 14px">Halo Bapak/Ibu [Nama Customer MTF],</span><br />
+                 <span style="font-size: 16px">Yth. Bapak/Ibu [Nama Customer MTF],</span><br />
                  &nbsp;
                 </td>
                </tr>
@@ -949,8 +940,7 @@
                   font-weight: normal;
                  "
                 >
-                 Pembayaran transaksi Anda telah berhasil kami terima.
-               </br> Berikut detail transaksi Anda:
+                 Pembayaran transaksi Anda telah berhasil kami terima. Berikut adalah detail transaksi Anda:
                 </td>
                </tr>
               </tbody>
@@ -979,11 +969,11 @@
               .table-kv {
                width: 100%;
                border-collapse: collapse;
-               margin-bottom: 10px;
+               /* margin-bottom: 20px; */
                table-layout: auto;
               }
               .table-kv td {
-               font-size: 16px;
+               font-size: 14px;
                line-height: 1.5;
                padding: 5px 18px;
                vertical-align: middle;
@@ -1043,56 +1033,61 @@
               style="width: 100%; border-collapse: collapse"
              >
               <tbody>
-                <tr>
+               <tr>
                 <td class="kv-label">Nama</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">John Doe</td>
+                <td class="kv-value">Fadel Fachrezi</td>
                </tr>
+               <tr>
+                <td class="kv-label">Nomor Identitas</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">3312456712345678</td>
+               </tr>
+               <tr>
                <tr>
                 <td class="kv-label">Nomor Kontrak</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">99881939103</td>
+                <td class="kv-value">9992300735</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Nomor Request</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">01230223</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Nomor Transaksi</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">999PYMT2026060360</td>
                </tr>
                <tr>
                 <td class="kv-label">Jenis Transaksi</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">Pembayaran Lainnya - Pelepasan Agunan (Non MKL)</td>
+                <td class="kv-value">Pembayaran Pokok dan Bunga</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Tanggal Request</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">12 Juni 2026</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Tanggal Jatuh Tempo</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">15 Juni 2026</td>
+               </tr>
+               <tr>
+                <td class="kv-label">Pembayaran ke</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">22</td>
                </tr>
                <tr>
                 <td class="kv-label">Nominal Pembayaran</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">Rp 135.785.000</td>
+                <td class="kv-value">Rp 6.479.167</td>
                </tr>
                <tr>
-                <td class="kv-label">Nomor Virtual Account</td>
+                <td class="kv-label">PPN PK <br/> (PPN dibebaskan sesuai PP No. 49 Tahun 2022)</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">889012345678901234</td>
-               </tr>
-               <tr>
-                <td class="kv-label">Nama Bank</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">Bank Mandiri</td>
-               </tr>
-                              <tr>
-                <td class="kv-label">Status Pembayaran</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">
-                     <span style="
-                        display: inline-block;
-                        padding: 4px 10px;
-                        font-size: 14px;
-                        font-weight: 600;
-                        color: #0B5C22;
-                        background-color: #E1FCE9;
-                        border-radius: 999px;">
-                        Berhasil
-                     </span>
-               </td>
-               </tr>
-               <tr>
-                <td class="kv-label">Tanggal Pembayaran</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">25 April 2026</td>
+                <td class="kv-value">0</td>
                </tr>
               </tbody>
              </table>
@@ -1102,6 +1097,7 @@
            </tr>
           </tbody>
          </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1121,15 +1117,13 @@
                  valign="top"
                  class="mcnTextContent"
                  style="
-                  padding: 0px 18px 9px;
+                  padding: 0px 18px;
                   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: normal;
+                  font-size: 12px;
+                  font-weight: bold;
                  "
                 >
-                 Transaksi Anda sedang diproses. Kami akan segera menginformasikan status selanjutnya.
-                Atas perhatiannya, kami ucapkan terima kasih.</td>
+                 Harga Sudah Termasuk PPN sesuai dengan ketentuan perpajakan yang berlaku
                </tr>
               </tbody>
              </table>
@@ -1137,6 +1131,43 @@
            </tr>
           </tbody>
          </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
+          <tbody class="mcnTextBlockOuter">
+           <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
+             <table
+              align="left"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="max-width: 100%; min-width: 100%"
+              width="100%"
+              class="mcnTextContentContainer"
+             >
+              <tbody>
+               <tr>
+                <td
+                 valign="top"
+                 class="mcnTextContent"
+                 style="
+                  padding: 0px 18px 10px;
+                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
+                  font-size: 12px;
+                  font-style: italic;
+                  font-weight: normal;
+                 "
+                >
+                 <strong>Pemenuhan PPN ini sesuai dengan UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan
+                 </strong>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1161,15 +1192,50 @@
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
-                 <h2 class="null">
+                 Apabila Bapak/Ibu mengalami kendala atau membutuhkan informasi lebih lanjut, silakan hubungi layanan Care Center 1500059 (Senin–Jumat pukul 08.00–17.00 WIB). Cek detail tagihan, simulasi pembayaran, dan informasi kontrak Anda melalui aplikasi MTF Mobile.</td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
+          <tbody class="mcnTextBlockOuter">
+           <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
+             <table
+              align="left"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="max-width: 100%; min-width: 100%"
+              width="100%"
+              class="mcnTextContentContainer"
+             >
+              <tbody>
+               <tr>
+                <td
+                 valign="top"
+                 class="mcnTextContent"
+                 style="
+                  padding: 10px 18px 0px;
+                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: normal;
+                 "
+                >
+                 
                   <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                    ><span style="font-size: 16px">Hormat Kami</span></font
                   >
-                 </h2>
-                 <span style="font-size: 16px">PT Mandiri Tunas Finance</span><br />
-                 &nbsp;
+                 
+                 
                 </td>
                </tr>
               </tbody>
@@ -1178,6 +1244,7 @@
            </tr>
           </tbody>
          </table>
+         
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1206,9 +1273,10 @@
                 >
                  <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                   ><span style="font-size: 16px"
-                   ><strong>PT Mandiri Tunas Finance</strong>
+                   >
+                   <strong>PT Mandiri Tunas Finance</strong>
                    <br />
-                   NPWP 01.343.661.4-093.000<br />
+                   NPWP 0013436613093000<br />
                    Graha Mandiri Jl. Imam Bonjol No 61, Menteng, Jakarta Pusat, DKI Jakarta</span
                   ></font
                  >
@@ -1228,6 +1296,8 @@
            </tr>
           </tbody>
          </table>
+
+
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%">
           <tbody class="mcnImageBlockOuter">
            <tr>
