@@ -5,10 +5,19 @@
  xmlns:o="urn:schemas-microsoft-com:office:office"
 >
  <head>
+  <!-- NAME: 1 COLUMN -->
+  <!--[if gte mso 15]>
+   <xml>
+    <o:OfficeDocumentSettings>
+     <o:AllowPNG />
+     <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+   </xml>
+  <![endif]-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menunggu Pembayaran</title>
+  <title>Informasi Virtual Account Pembayaran</title>
 
   <style type="text/css">
    p {
@@ -751,6 +760,12 @@
    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr>
      <td align="center" valign="top" id="bodyCell">
+      <!-- BEGIN TEMPLATE // -->
+      <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                        <tr>
+                        <td align="center" valign="top" width="600" style="width:600px;">
+                        <![endif]-->
       <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
        <tr>
         <td valign="top" id="templatePreheader"></td>
@@ -780,7 +795,7 @@
                  <img
                   align="right"
                   alt=""
-                  src="https://res.cloudinary.com/e2y0lswb/image/upload/v1785124052/header-img_cqeutx.png"
+                  src="https://mcusercontent.com/6abe246b2ca08630f1f789a9d/images/a87ad9bd-ea90-1cf2-67f6-1feca5e99a67.png"
                   width="600"
                   style="
                    max-width: 681px;
@@ -932,6 +947,7 @@
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
                  Sehubungan dengan permohonan transaksi pembayaran yang telah diajukan, berikut kami sampaikan informasi pembayaran melalui Virtual Account:
@@ -963,11 +979,11 @@
               .table-kv {
                width: 100%;
                border-collapse: collapse;
-               /* margin-bottom: 20px; */
+               margin-bottom: 10px;
                table-layout: auto;
               }
               .table-kv td {
-               font-size: 14px;
+               font-size: 16px;
                line-height: 1.5;
                padding: 5px 18px;
                vertical-align: middle;
@@ -1032,36 +1048,16 @@
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nama_customer]</td>
                </tr>
-               <!-- <tr>
-                <td class="kv-label">Nomor Identitas</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">[nomor_identitas]</td>
-               </tr> -->
                <tr>
                 <td class="kv-label">Nomor Kontrak</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nomor_kontrak]</td>
                </tr>
-               <!-- <tr>
-                <td class="kv-label">Nomor Request</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">[nomor_request]</td>
-               </tr> -->
-               <!-- <tr>
-                <td class="kv-label">Nomor Transaksi</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">[nomor_transaksi]</td>
-               </tr> -->
                <tr>
-                <td class="kv-label">Jenis Transaksi</td>
+                <td class="kv-label">Jenis Pembayaran</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">[tipe_pembayaran]</td>
+                <td class="kv-value">[jenis_pembayaran]</td>
                </tr>
-               <!-- <tr>
-                <td class="kv-label">Tanggal Request</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">[tanggal_request]</td>
-               </tr> -->
                <tr>
                 <td class="kv-label">Nominal Pembayaran</td>
                 <td class="kv-sep">:</td>
@@ -1070,22 +1066,27 @@
                <tr>
                 <td class="kv-label">Nomor Virtual Account</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">[nomor_va]</td>
+                <td class="kv-value">[nomor_virtual_account]</td>
                </tr>
                <tr>
                 <td class="kv-label">Nama Bank</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nama_bank]</td>
                </tr>
-               <tr>
+               <!-- <tr>
+                <td class="kv-label">Batas Waktu Pembayaran</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">25 April 2026, 23:59 WIB</td>
+               </tr> -->
+                <tr>
                 <td class="kv-label">Status Pembayaran</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">
                   <span style="
                         display: inline-block;
                         padding: 4px 10px;
-                        font-size: 12px;
-                        font-weight: 500;
+                        font-size: 14px;
+                        font-weight: 600;
                         color: #B88800;
                         background-color: #FFFAE9;
                         border-radius: 999px;">
@@ -1101,7 +1102,7 @@
               </tbody>
              </table>
 
-         <!-- END STYLING TABLE -->
+             <!-- END STYLING TABLE -->
             </td>
            </tr>
           </tbody>
@@ -1234,19 +1235,18 @@
                  valign="top"
                  class="mcnTextContent"
                  style="
-                  padding: 10px 18px 0px;
+                  padding: 0px 18px 9px;
                   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
                  "
                 >
-                 
+                 <h2 class="null">
                   <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                    ><span style="font-size: 16px">Hormat Kami</span></font
                   >
-                 
-                 
+                 </h2>
                 </td>
                </tr>
               </tbody>
@@ -1255,7 +1255,6 @@
            </tr>
           </tbody>
          </table>
-         
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1284,10 +1283,9 @@
                 >
                  <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                   ><span style="font-size: 16px"
-                   >
-                   <strong>PT Mandiri Tunas Finance</strong>
+                   ><strong>PT Mandiri Tunas Finance</strong>
                    <br />
-                   NPWP 0013436613093000<br />
+                   NPWP 01.343.661.4-093.000<br />
                    Graha Mandiri Jl. Imam Bonjol No 61, Menteng, Jakarta Pusat, DKI Jakarta</span
                   ></font
                  >
@@ -1307,8 +1305,6 @@
            </tr>
           </tbody>
          </table>
-
-
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%">
           <tbody class="mcnImageBlockOuter">
            <tr>
