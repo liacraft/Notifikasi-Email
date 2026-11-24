@@ -5,10 +5,19 @@
  xmlns:o="urn:schemas-microsoft-com:office:office"
 >
  <head>
+  <!-- NAME: 1 COLUMN -->
+  <!--[if gte mso 15]>
+   <xml>
+    <o:OfficeDocumentSettings>
+     <o:AllowPNG />
+     <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+   </xml>
+  <![endif]-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pembayaran Berhasil</title>
+  <title>Konfirmasi Pembayaran Berhasil</title>
 
   <style type="text/css">
    p {
@@ -751,6 +760,12 @@
    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr>
      <td align="center" valign="top" id="bodyCell">
+      <!-- BEGIN TEMPLATE // -->
+      <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                        <tr>
+                        <td align="center" valign="top" width="600" style="width:600px;">
+                        <![endif]-->
       <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
        <tr>
         <td valign="top" id="templatePreheader"></td>
@@ -780,7 +795,7 @@
                  <img
                   align="right"
                   alt=""
-                  src="https://res.cloudinary.com/e2y0lswb/image/upload/v1785124052/header-img_cqeutx.png"
+                  src="https://mcusercontent.com/6abe246b2ca08630f1f789a9d/images/a87ad9bd-ea90-1cf2-67f6-1feca5e99a67.png"
                   width="600"
                   style="
                    max-width: 681px;
@@ -932,6 +947,7 @@
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
                  Terima kasih telah menggunakan Virtual Account untuk kebutuhan transaksi pembayaran Anda. Berikut kami sampaikan informasi status pembayaran melalui Virtual Account:
@@ -963,13 +979,13 @@
               .table-kv {
                width: 100%;
                border-collapse: collapse;
-               /* margin-bottom: 20px; */
+               margin-bottom: 20px;
                table-layout: auto;
               }
               .table-kv td {
-               font-size: 14px;
+               font-size: 16px;
                line-height: 1.5;
-               padding: 5px 18px;
+               padding: 8px 18px;
                vertical-align: middle;
                font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
               }
@@ -1032,45 +1048,50 @@
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nama_customer]</td>
                </tr>
-               <!-- <tr>
+               <tr>
                 <td class="kv-label">Nomor Identitas</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nomor_identitas]</td>
-               </tr> -->
+               </tr>
                <tr>
                 <td class="kv-label">Nomor Kontrak</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nomor_kontrak]</td>
                </tr>
-               <!-- <tr>
+               <tr>
                 <td class="kv-label">Nomor Request</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nomor_request]</td>
-               </tr> -->
+               </tr>
                <tr>
                 <td class="kv-label">Nomor Transaksi</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nomor_transaksi]</td>
                </tr>
                <tr>
-                <td class="kv-label">Jenis Transaksi</td>
+                <td class="kv-label">Jenis Pembayaran</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">[tipe_pembayaran]</td>
+                <td class="kv-value">[jenis_pembayaran]</td>
                </tr>
-               <!-- <tr>
+               <tr>
                 <td class="kv-label">Tanggal Request</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[tanggal_request]</td>
-               </tr> -->
+               </tr>
                <tr>
                 <td class="kv-label">Nominal Pembayaran</td>
                 <td class="kv-sep">:</td>
                 <td class="kv-value">[nominal_pembayaran]</td>
                </tr>
                <tr>
+                <td class="kv-label">PPN PK</td>
+                <td class="kv-sep">:</td>
+                <td class="kv-value">0</td>
+               </tr>
+               <tr>
                 <td class="kv-label">Nomor Virtual Account</td>
                 <td class="kv-sep">:</td>
-                <td class="kv-value">[nomor_va]</td>
+                <td class="kv-value">[nomor_virtual_account]</td>
                </tr>
                <tr>
                 <td class="kv-label">Nama Bank</td>
@@ -1078,20 +1099,20 @@
                 <td class="kv-value">[nama_bank]</td>
                </tr>
                <tr>
-                <td class="kv-label">Status Pembayaran</td>
-                <td class="kv-sep">:</td>
-                <td class="kv-value">
-                  <span style="
+                  <td class="kv-label">Status Pembayaran</td>
+                  <td class="kv-sep">:</td>
+                  <td class="kv-value">
+                     <span style="
                         display: inline-block;
                         padding: 4px 10px;
-                        font-size: 12px;
-                        font-weight: 500;
+                        font-size: 14px;
+                        font-weight: 600;
                         color: #0B5C22;
                         background-color: #E1FCE9;
                         border-radius: 999px;">
                         Berhasil
                      </span>
-                </td>
+                  </td>
                </tr>
                <tr>
                 <td class="kv-label">Tanggal Pembayaran</td>
@@ -1106,7 +1127,6 @@
            </tr>
           </tbody>
          </table>
-
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1126,49 +1146,16 @@
                  valign="top"
                  class="mcnTextContent"
                  style="
-                  padding: 0px 18px;
-                  font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
-                  font-size: 12px;
-                  font-weight: bold;
-                 "
-                >
-                 Harga Sudah Termasuk PPN sesuai dengan ketentuan perpajakan yang berlaku
-               </tr>
-              </tbody>
-             </table>
-            </td>
-           </tr>
-          </tbody>
-         </table>
-
-         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
-          <tbody class="mcnTextBlockOuter">
-           <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px">
-             <table
-              align="left"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              style="max-width: 100%; min-width: 100%"
-              width="100%"
-              class="mcnTextContentContainer"
-             >
-              <tbody>
-               <tr>
-                <td
-                 valign="top"
-                 class="mcnTextContent"
-                 style="
-                  padding: 0px 18px 10px;
+                  padding: 0px 18px 20px;
                   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
                   font-size: 12px;
                   font-style: italic;
                   font-weight: normal;
+                  text-align: justify;
                  "
                 >
-                 <strong>Pemenuhan PPN ini sesuai dengan UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan
-                 </strong>
+                 <strong>Pemenuhan PPN ini sesuai dengan UU No. 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan</strong>
+                </td>
                </tr>
               </tbody>
              </table>
@@ -1176,6 +1163,7 @@
            </tr>
           </tbody>
          </table>
+
 
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
@@ -1232,19 +1220,18 @@
                  valign="top"
                  class="mcnTextContent"
                  style="
-                  padding: 10px 18px 0px;
+                  padding: 0px 18px 9px;
                   font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana, sans-serif;
                   font-size: 16px;
                   font-style: normal;
                   font-weight: normal;
                  "
                 >
-                 
+                 <h2 class="null">
                   <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                    ><span style="font-size: 16px">Hormat Kami</span></font
                   >
-                 
-                 
+                 </h2>
                 </td>
                </tr>
               </tbody>
@@ -1253,7 +1240,6 @@
            </tr>
           </tbody>
          </table>
-         
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%">
           <tbody class="mcnTextBlockOuter">
            <tr>
@@ -1282,10 +1268,9 @@
                 >
                  <font face="helvetica neue, helvetica, arial, verdana, sans-serif"
                   ><span style="font-size: 16px"
-                   >
-                   <strong>PT Mandiri Tunas Finance</strong>
+                   ><strong>PT Mandiri Tunas Finance</strong>
                    <br />
-                   NPWP 0013436613093000<br />
+                   NPWP 01.343.661.4-093.000<br />
                    Graha Mandiri Jl. Imam Bonjol No 61, Menteng, Jakarta Pusat, DKI Jakarta</span
                   ></font
                  >
@@ -1305,8 +1290,6 @@
            </tr>
           </tbody>
          </table>
-
-
          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width: 100%">
           <tbody class="mcnImageBlockOuter">
            <tr>
